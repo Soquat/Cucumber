@@ -21,11 +21,6 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Cucumber tests and generate html report
       run: npm run html
-    - name: Save failed test screenshots
-      if: always()
-      run: |
-        mkdir -p playwright-report/screenshots
-        node ./scripts/save-failed-screenshots.ts playwright-report/results.json playwright-report/screenshots
     - uses: actions/upload-artifact@v3
       if: always()
       with:
