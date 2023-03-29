@@ -1,0 +1,27 @@
+{
+  "name": "cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js test",
+    "report": "cucumber-js test --parallel 4 --exit --format html:reports/report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soquat/Cucumber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Soquat/Cucumber/issues"
+  },
+  "homepage": "https://github.com/Soquat/Cucumber#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.0",
+    "@playwright/test": "^1.32.1",
+    "cucumber-html-reporter": "^6.0.0",
+    "ts-node": "^10.9.1"
+  }
+}
