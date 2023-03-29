@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js test",
-    "report": "cucumber-js test --parallel 4 --exit --format html:reports/report.html"
+    "html": "cucumber-js test --parallel 4 --exit --format html:reports/report.html",
+    "json": "cucumber-js test --parallel 4 --exit --format json:reports/report.json",
+    "xml": "cucumber-js test --parallel 4 --exit --format junit:reports/report.xml"
   },
   "repository": {
     "type": "git",

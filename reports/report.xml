@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<testsuite failures="0" skipped="0" name="cucumber-js" time="32.345667371" tests="4">
+  <testcase classname="Prodcuts test" name="Add to cart" time="9.202562192">
+    <system-out><![CDATA[Given User navigates to the application...................................passed
+And User click on the login link..........................................passed
+And User enter the username as "ortoni"...................................passed
+And User enter the password as "pass1234$"................................passed
+And User click on the login button........................................passed
+When user search for a "Roomies"..........................................passed
+And user add the book to the cart.........................................passed
+Then the cart badge should get updated....................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Prodcuts test" name="Add to cart [1]" time="9.434594988999999">
+    <system-out><![CDATA[Given User navigates to the application...................................passed
+And User click on the login link..........................................passed
+And User enter the username as "ortonikc".................................passed
+And User enter the password as "pass1234".................................passed
+And User click on the login button........................................passed
+When user search for a "The Simple Wild"..................................passed
+And user add the book to the cart.........................................passed
+Then the cart badge should get updated....................................passed]]></system-out>
+  </testcase>
+  <testcase classname="User Authentication tests" name="Login should be success" time="6.976503193999999">
+    <system-out><![CDATA[Given User navigates to the application...................................passed
+And User click on the login link..........................................passed
+And User enter the username as "ortoni"...................................passed
+And User enter the password as "Pass1234".................................passed
+When User click on the login button.......................................passed
+Then Login should be success..............................................passed]]></system-out>
+  </testcase>
+  <testcase classname="User Authentication tests" name="Login should not be success" time="6.732006996">
+    <system-out><![CDATA[Given User navigates to the application...................................passed
+And User click on the login link..........................................passed
+Given User enter the username as "koushik"................................passed
+Given User enter the password as "Passkoushik"............................passed
+When User click on the login button.......................................passed
+But Login should fail.....................................................passed]]></system-out>
+  </testcase>
+</testsuite>
