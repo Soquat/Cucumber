@@ -1,10 +1,10 @@
-Feature: Prodcuts test
+Feature: As a logged in user, I want to add a book to the cart
 
     Background:
         Given User navigates to the application
         And User click on the login link
 
-    Scenario Outline: Add to cart
+    Scenario Outline: As a user i want to login and add a book to the cart
         And User enter the username as "<username>"
         And User enter the password as "<password>"
         And User click on the login button
