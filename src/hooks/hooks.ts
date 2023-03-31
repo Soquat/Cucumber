@@ -17,7 +17,8 @@ Before(async function () {
 
 AfterStep(async function ({ pickle, result }) {
     console.log(result?.status);
-    if (result?.status == Status.FAILED) {
+    console.log(result?.status == Status.UNDEFINED)
+    if (result?.status == Status.UNDEFINED || Status.FAILED) {
         const img = await pageFixture.page.screenshot({ path: `./screenshots/${pickle.name}.png`, type: "png" });
         await this.attach(img, "image/png");
     }
