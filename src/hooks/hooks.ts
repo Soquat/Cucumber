@@ -16,11 +16,6 @@ Before(async function () {
 });
 
 AfterStep(async function ({ pickle, result }) {
-    const img = await pageFixture.page.screenshot({ path: `./screenshots/${pickle.name}.png`, type: "png" });
-    await this.attach(img, "image/png");
-});
-
-After(async function ({ pickle, result }) {
     console.log(result?.status);
     if (result?.status == Status.FAILED) {
         const img = await pageFixture.page.screenshot({ path: `./screenshots/${pickle.name}.png`, type: "png" });
@@ -29,6 +24,7 @@ After(async function ({ pickle, result }) {
     await pageFixture.page.close();
     await context.close();
 });
+
 
 AfterAll(async function () {
     await browser.close();
