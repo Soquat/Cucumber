@@ -6,7 +6,7 @@ import { expect } from "@playwright/test";
 import { pageFixture } from "../../hooks/pageFixtures";
 
 
-Given('user search for a {string}', async function (book) {
+Given('ser search for a {string}', async function (book) {
     await pageFixture.page.locator("input[type='search']").type(book);
     await pageFixture.page.waitForTimeout(2000);
     await pageFixture.page.locator("mat-option[role='option'] span").click();

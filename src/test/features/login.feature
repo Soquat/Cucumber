@@ -1,4 +1,4 @@
-Feature: As a user I want to login to the application
+Feature: The user wants to login to the application
 
     Background:
         Given User navigates to the application

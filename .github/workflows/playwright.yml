@@ -22,7 +22,7 @@ jobs:
       - name: Run Cucumber tests and generate html report
         run: npm run html
       - uses: actions/upload-artifact@v3
-        if: always()
+        if: always() # if failure()
         with:
           name: Report and screenshots
           path: |
