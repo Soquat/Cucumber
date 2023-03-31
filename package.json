@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js test",
+    "posttest": "npx ts-node src/helper/report.ts",
     "html": "cucumber-js test --parallel 4 --exit --format html:reports/report.html",
     "json": "cucumber-js test --parallel 4 --exit --format json:reports/report.json",
     "xml": "cucumber-js test --parallel 4 --exit --format junit:reports/report.xml",
@@ -29,6 +30,7 @@
     "cucumber-html-reporter": "^6.0.0",
     "eslint": "^8.37.0",
     "husky": "^8.0.3",
+    "multiple-cucumber-html-reporter": "^3.3.0",
     "ts-node": "^10.9.1"
   }
 }
